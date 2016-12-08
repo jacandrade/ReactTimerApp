@@ -1,14 +1,14 @@
 var React = require('react');
 var {Link, IndexLink} = require('react-router');
 
-var Nav = (props) => {
+var Navigation = (props) => {
         return (
             <div className="top-bar">
                 <div className="top-bar-left">
                     <ul className="menu">
                         <li className="menu-text">React timer app</li>
                         <li><IndexLink to="/" activeClassName="active-link">Timer</IndexLink></li>
-                        <li><Link to="/" activeClassName="active-link">Contdown</Link></li>
+                        <li><Link to="/countdown" activeClassName="active-link">Contdown</Link></li>
                     </ul>
                 </div>
                 <div className="top-bar-right">
@@ -23,4 +23,4 @@ var Nav = (props) => {
     }
 
 
-module.exports = Nav;
+module.exports = Navigation;
